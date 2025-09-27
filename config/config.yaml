@@ -1,0 +1,46 @@
+# Honeyfile Trap Configuration
+monitoring:
+  enabled: true
+  check_interval: 1.0
+  recursive: true
+  
+honeyfiles:
+  directory: "./honeyfiles"
+  types:
+    - "txt"
+    - "doc"
+    - "docx"
+    - "pdf"
+    - "xls"
+    - "xlsx"
+    - "ppt"
+    - "pptx"
+    - "zip"
+    - "rar"
+  
+alerts:
+  enabled: true
+  sound: false
+  terminal_color: true
+  log_level: "INFO"
+  
+logging:
+  enabled: true
+  directory: "./logs"
+  max_file_size: "10MB"
+  backup_count: 5
+  encryption: false
+  
+security:
+  collect_process_info: true
+  collect_user_info: true
+  collect_network_info: false
+  
+notifications:
+  email:
+    enabled: false
+    smtp_server: ""
+    smtp_port: 587
+    username: ""
+    password: ""
+    recipients: []

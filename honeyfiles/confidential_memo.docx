@@ -1,0 +1,8 @@
+Microsoft Word Document Placeholder
+This file appears to be a .doc/.docx file but is actually text.
+Filename: confidential_memo
+Category: corporate
+
+For a real implementation, you would use libraries like:
+- python-docx for .docx files
+- PyPDF2 for PDF files

@@ -1,0 +1,38 @@
+# LOGIN_INFO - CONFIDENTIAL
+# Generated: 2025-09-27 09:49:50
+# DO NOT SHARE OR DISTRIBUTE
+
+[API Gateway]
+Server: app5.company.com
+Username: user439
+Password: oG2nGsATrQXR
+Port: 3015
+
+[Email]
+Server: srv95.company.com
+Username: admin542
+Password: DV95jUTP8hhp
+Port: 4805
+
+[VPN]
+Server: srv71.enterprise.org
+Username: administrator534
+Password: %6pbiZZQgkdo
+Port: 4372
+
+[Database]
+Server: app16.internal.local
+Username: manager160
+Password: lfgc8KYU6$OQ
+Port: 6924
+
+[VPN]
+Server: srv47.corp.net
+Username: manager306
+Password: hO6sXaBNqK7Q
+Port: 5659
+
+# Security Notes:
+# - Change passwords monthly
+# - Use VPN for remote access
+# - Enable 2FA where possible

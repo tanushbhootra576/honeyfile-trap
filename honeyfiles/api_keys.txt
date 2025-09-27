@@ -1,0 +1,26 @@
+# API_KEYS - CONFIDENTIAL
+# Generated: 2025-09-27 09:49:50
+# DO NOT SHARE OR DISTRIBUTE
+
+[FTP Server]
+Server: srv14.internal.local
+Username: administrator673
+Password: %G0x!AwVV4LY
+Port: 5016
+
+[FTP Server]
+Server: db53.corp.net
+Username: manager446
+Password: hAfpz$CnsveJ
+Port: 9930
+
+[FTP Server]
+Server: db96.corp.net
+Username: admin231
+Password: LsH#Z$cS$cDG
+Port: 4582
+
+# Security Notes:
+# - Change passwords monthly
+# - Use VPN for remote access
+# - Enable 2FA where possible

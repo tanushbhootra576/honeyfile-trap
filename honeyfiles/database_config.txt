@@ -1,0 +1,44 @@
+# DATABASE_CONFIG - CONFIDENTIAL
+# Generated: 2025-09-27 09:49:50
+# DO NOT SHARE OR DISTRIBUTE
+
+[VPN]
+Server: srv10.corp.net
+Username: user486
+Password: qmk4z7%iP#eT
+Port: 1261
+
+[Admin Panel]
+Server: srv83.enterprise.org
+Username: administrator695
+Password: %AxQ#35ly32b
+Port: 1017
+
+[API Gateway]
+Server: app86.internal.local
+Username: admin615
+Password: Y7#l@2Z9HR4$
+Port: 3326
+
+[Email]
+Server: app94.company.com
+Username: administrator522
+Password: yT%qHyc4Ovc$
+Port: 7302
+
+[Admin Panel]
+Server: db94.company.com
+Username: user143
+Password: JCX6#xA68zSQ
+Port: 1307
+
+[API Gateway]
+Server: db39.corp.net
+Username: manager757
+Password: buA@jyDS09Lc
+Port: 7523
+
+# Security Notes:
+# - Change passwords monthly
+# - Use VPN for remote access
+# - Enable 2FA where possible
