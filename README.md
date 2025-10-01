@@ -1,4 +1,4 @@
-# 🍯 Honeyfile Trap - Terminal-Based Cybersecurity Intrusion Detection Tool
+#  Honeyfile Trap - Terminal-Based Cybersecurity Intrusion Detection Tool
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.7+-green.svg)](https://python.org)
@@ -6,42 +6,42 @@
 
 A sophisticated terminal-based cybersecurity tool that leverages **honeyfiles** (decoy files) to detect unauthorized access and potential intrusions. When attackers interact with these trap files, the system generates real-time alerts, logs detailed incident information, and can notify administrators—all through an intuitive command-line interface.
 
-## 🎯 Key Features
+##  Key Features
 
-### 📂 Honeyfile Generator
+###  Honeyfile Generator
 - **Realistic Decoy Files**: Generate convincing fake files like `passwords.txt`, `financial_report.pdf`, `admin_config.docx`
 - **Multiple Categories**: Sensitive, financial, corporate, and personal document types
 - **Authentic Content**: Files contain believable (but fake) data to lure attackers
 - **Metadata Spoofing**: Realistic file timestamps and sizes
 
-### 👁️ Real-Time File Monitoring
+###  Real-Time File Monitoring
 - **Cross-Platform Support**: Works on Windows, Linux, and macOS
 - **Process Tracking**: Identifies which processes access honeyfiles
 - **User Detection**: Captures username and system information
 - **Network Monitoring**: Optional IP and connection tracking
 - **Low Overhead**: Efficient monitoring with minimal system impact
 
-### ⚠️ Intelligent Alert System
+###  Intelligent Alert System
 - **Real-Time Notifications**: Immediate terminal alerts when files are accessed
 - **Severity Levels**: Critical, High, Medium, and Low priority alerts
 - **Colorized Output**: Eye-catching terminal displays with emoji indicators
 - **Email Integration**: Optional SMTP notifications to administrators
 - **Sound Alerts**: Audio notifications for immediate attention
 
-### 📜 Comprehensive Logging
+###  Comprehensive Logging
 - **Structured Logging**: JSON, CSV, or text format options
 - **Rich Metadata**: Process IDs, usernames, timestamps, file paths
 - **Log Rotation**: Automatic file rotation with configurable size limits
 - **Export Capabilities**: Export logs for external analysis
 - **Report Generation**: Summary reports with statistics and trends
 
-### 🔐 Security Features
+###  Security Features
 - **Log Encryption**: Optional AES or RSA encryption for log files
 - **Integrity Verification**: Hash-based file integrity checking
 - **Access Control**: Process-level access monitoring
 - **Stealth Operation**: Minimal system footprint
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Installation
 
@@ -83,7 +83,7 @@ python honeyfile_trap.py logs --type alert --limit 20
 python honeyfile_trap.py report --days 7 --output security_report.json
 ```
 
-## 📋 Detailed Usage
+##  Detailed Usage
 
 ### Command Reference
 
@@ -150,7 +150,7 @@ python honeyfile_trap.py config --validate
 python honeyfile_trap.py config --reset
 ```
 
-## ⚙️ Configuration
+##  Configuration
 
 The system uses a YAML configuration file located at `./config/config.yaml`. Here's a sample configuration:
 
@@ -212,30 +212,30 @@ notifications:
 | | `collect_user_info` | Collect user information | `true` |
 | | `collect_network_info` | Monitor network connections | `false` |
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                    Honeyfile Trap System                    │
 ├─────────────────────────────────────────────────────────────┤
-│  🍯 Honeyfile Generator  │  👁️  File Monitor               │
+│   Honeyfile Generator     │    File Monitor                 │
 │  • Generate decoy files   │  • Cross-platform monitoring    │
 │  • Realistic content      │  • Process tracking             │
 │  • Multiple categories    │  • Event detection              │
 ├─────────────────────────────────────────────────────────────┤
-│  ⚠️  Alert System        │  📜 Incident Logger             │
+│      Alert System        │     Incident Logger             │
 │  • Real-time alerts      │  • Structured logging           │
 │  • Email notifications   │  • Log encryption               │
 │  • Severity levels       │  • Report generation            │
 ├─────────────────────────────────────────────────────────────┤
-│  ⚙️  Configuration       │  🔐 Security Features          │
+│      Configuration       │      Security Features          │
 │  • YAML-based config     │  • Optional encryption          │
 │  • Interactive setup     │  • Integrity verification       │
 │  • Validation system     │  • Access control              │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-## 🔧 Technical Details
+##  Technical Details
 
 ### Requirements
 - **Python**: 3.7 or higher
@@ -259,21 +259,21 @@ The system uses the `watchdog` library for efficient, cross-platform file system
 
 This approach provides real-time file access detection with minimal CPU overhead.
 
-## 📊 Sample Output
+## Sample Output
 
 ### Terminal Monitoring Display
 ```
-🍯 HONEYFILE TRAP - INTRUSION DETECTION SYSTEM
+ HONEYFILE TRAP - INTRUSION DETECTION SYSTEM
 ═══════════════════════════════════════════════
 Status: ACTIVE
 Time: 2024-03-15 14:30:22
 Press Ctrl+C to stop monitoring
 
-🔍 File Monitor initialized
+ File Monitor initialized
    Directory: D:\honeyfiles
    Check interval: 1.0s
 
-📋 Found 12 honeyfiles to monitor:
+ Found 12 honeyfiles to monitor:
    • admin_access.txt
    • budget_2024.xlsx
    • confidential_memo.docx
@@ -281,18 +281,18 @@ Press Ctrl+C to stop monitoring
    • passwords.txt
    ...
 
-✅ File monitor started successfully
+File monitor started successfully
    Monitoring 12 honeyfiles
 
 ═══════════════════════════════════════════════
-🚨 HONEYFILE ACCESSED!
-📁 File: passwords.txt
-🔧 Action: opened
-⏰ 2024-03-15 14:32:45
-⚙️  Possible processes:
+ HONEYFILE ACCESSED!
+ File: passwords.txt
+ Action: opened
+ 2024-03-15 14:32:45
+  Possible processes:
    • PID 2847: notepad.exe (john_user)
    • PID 1234: explorer.exe (john_user)
-👤 User: john_user on Windows
+ User: john_user on Windows
 ═══════════════════════════════════════════════
 ```
 
@@ -326,7 +326,7 @@ Press Ctrl+C to stop monitoring
 
 ### Summary Report Example
 ```
-📈 SUMMARY REPORT (7 days)
+ SUMMARY REPORT (7 days)
 ══════════════════════════════════════════════
 File accesses: 23
 Alerts generated: 18
@@ -343,7 +343,7 @@ Alert levels:
    • MEDIUM: 7
 ```
 
-## 🛡️ Security Considerations
+##  Security Considerations
 
 ### Best Practices
 1. **File Placement**: Place honeyfiles in locations where legitimate users shouldn't access them
@@ -358,9 +358,9 @@ Alert levels:
 - **Performance**: High-frequency file access may generate many alerts
 - **Detection Evasion**: Sophisticated attackers may detect honeyfiles
 
-## 🤝 Contributing
+##  Contributing
 
-We welcome contributions! Here's how to get started:
+Welcome contributions! Here's how to get started:
 
 1. **Fork the repository**
 2. **Create a feature branch**: `git checkout -b feature-name`
@@ -385,7 +385,7 @@ python -m pytest tests/
 python honeyfile_trap.py --verbose monitor
 ```
 
-## 📈 Roadmap
+##  Roadmap
 
 ### Planned Features
 - [ ] **Web Dashboard**: Browser-based monitoring interface
@@ -401,7 +401,7 @@ python honeyfile_trap.py --verbose monitor
 - **v0.9.0**: Beta release with basic monitoring
 - **v0.5.0**: Alpha release with honeyfile generation
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -445,18 +445,7 @@ python honeyfile_trap.py logs --type access --days 1
 python honeyfile_trap.py export --format csv --output debug_logs.csv
 ```
 
-## 📞 Support
-
-- **Documentation**: Check this README and inline code documentation
-- **Issues**: Report bugs on [GitHub Issues](https://github.com/yourusername/honeyfile-trap/issues)
-- **Discussions**: Join conversations in [GitHub Discussions](https://github.com/yourusername/honeyfile-trap/discussions)
-- **Security**: Report security issues privately to security@yourproject.com
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **Watchdog Library**: Cross-platform file system monitoring
 - **Cryptography Project**: Security and encryption capabilities
@@ -466,6 +455,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**⚠️ Disclaimer**: This tool is designed for legitimate cybersecurity defense and monitoring purposes. Users are responsible for ensuring compliance with applicable laws and organizational policies. The authors are not responsible for misuse or damages resulting from the use of this software.
-
-**🛡️ Security Notice**: Always test in a controlled environment before deployment. Regularly review and audit monitoring configurations and access patterns.
+###✨ Developed by Tanush Bhootra
